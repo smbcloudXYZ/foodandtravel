@@ -9,6 +9,7 @@ env:
   GIT_HOST: ${{ secrets.GIT_HOST_SMB }}
   SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY_SMB }}
   SSH_KNOWN_HOST: ${{ secrets.SSH_KNOWN_HOST_SMB }}
+  NEXT_PUBLIC_BLOG_ID: ${{ secrets.NEXT_PUBLIC_BLOG_ID }}
 
 jobs:
   build:
