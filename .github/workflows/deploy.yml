@@ -41,6 +41,7 @@ jobs:
           rsync -a node_modules ${{ env.GIT_USER }}@${{ env.GIT_HOST }}:apps/ssr/foodandtravel/
           rsync -a .next ${{ env.GIT_USER }}@${{ env.GIT_HOST }}:apps/ssr/foodandtravel/
           rsync -a public ${{ env.GIT_USER }}@${{ env.GIT_HOST }}:apps/ssr/foodandtravel/
+          rsync next.config.mjs ${{ env.GIT_USER }}@${{ env.GIT_HOST }}:apps/ssr/foodandtravel/
           rsync package.json ${{ env.GIT_USER }}@${{ env.GIT_HOST }}:apps/ssr/foodandtravel/
           rsync pnpm-lock.yaml ${{ env.GIT_USER }}@${{ env.GIT_HOST }}:apps/ssr/foodandtravel/
           rsync .nvmrc ${{ env.GIT_USER }}@${{ env.GIT_HOST }}:apps/ssr/foodandtravel/
