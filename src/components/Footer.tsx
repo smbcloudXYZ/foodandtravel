@@ -14,11 +14,18 @@ export const Footer: FunctionComponent = () => {
           © {config.blog.copyright} {new Date().getFullYear()}
         </div>
         <div className="text-xs text-muted-foreground hidden lg:block">
+          {`Blog powered by `}
           <Link
-            href={`https://wisp.blog/?utm_source=next-js-template&utm_medium=web&utm_campaign=${config.baseUrl}`}
+            href={`https://wisp.blog/`}
           >
-            Blog powered by wisp
+            wisp
           </Link>
+          {`. Deployed on `}
+          <Link
+              href={`https://smbcloud.xyz/?utm_source=next-js-template&utm_medium=web&utm_campaign=${config.baseUrl}`}
+            >
+              smbCloud.
+            </Link>
         </div>
         <div>
           <Link href="/rss">
