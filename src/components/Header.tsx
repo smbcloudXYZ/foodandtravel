@@ -18,9 +18,13 @@ interface MenuItem {
   openInNewTab?: boolean;
 }
 const menuItems: MenuItem[] = [
-  { name: "Blog", href: "/" },
+  { name: "Bloggs", href: "/" },
   { name: "About", href: "/about" },
-  { name: "YouTube", href: "https://www.youtube.com/@fdndtrvl", openInNewTab: true },
+  {
+    name: "YouTube",
+    href: "https://www.youtube.com/@fdndtrvl",
+    openInNewTab: true,
+  },
 ];
 export const Navigation: FunctionComponent = () => {
   const pathname = usePathname();
@@ -35,7 +39,7 @@ export const Navigation: FunctionComponent = () => {
               target={item.openInNewTab ? "_blank" : "_self"}
               className={cn(
                 "hover:text-gray-900",
-                pathname === item.href && "font-semibold"
+                pathname === item.href && "font-semibold",
               )}
             >
               {item.name}
@@ -58,7 +62,7 @@ export const Navigation: FunctionComponent = () => {
                     target={item.openInNewTab ? "_blank" : "_self"}
                     className={cn(
                       "block py-2",
-                      pathname === item.href && "font-semibold"
+                      pathname === item.href && "font-semibold",
                     )}
                   >
                     {item.name}
