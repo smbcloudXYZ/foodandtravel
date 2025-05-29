@@ -1,4 +1,8 @@
 name = 'Food and Travel'
 
-[repository]
-name = 'foodandtravel'
+[project]
+id = 12
+repository = 'foodandtravel'
+name = 'food and travel'
+created_at = '2025-05-29T00:00:00Z'
+updated_at = '2025-05-29T00:00:00Z'
