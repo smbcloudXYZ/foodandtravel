@@ -18,7 +18,7 @@ interface MenuItem {
   openInNewTab?: boolean;
 }
 const menuItems: MenuItem[] = [
-  { name: "Bloggs", href: "/" },
+  { name: "Blog", href: "/" },
   { name: "About", href: "/about" },
   {
     name: "YouTube",
