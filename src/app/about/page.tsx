@@ -2,6 +2,7 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { config } from "@/config";
 import { signOgImageUrl } from "@/lib/og-image";
+import Image from "next/image";
 import Markdown from "react-markdown";
 
 const content = `# About Me
@@ -39,6 +40,7 @@ const Page = async () => {
     <div className="container mx-auto px-5">
       <Header />
       <div className="prose lg:prose-lg dark:prose-invert m-auto mt-20 mb-10 blog-content">
+        <Image src={"/images/IMG_3193.JPG"} width={300} height={560} alt={"New York"} />
         <Markdown
           components={{
             a: ({ href, children }) => (
