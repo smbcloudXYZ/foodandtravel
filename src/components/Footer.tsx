@@ -24,7 +24,7 @@ export const Footer: FunctionComponent = () => {
           </Link>
           {`. Deployed on `}
           <Link
-              href={`https://smbcloud.xyz/?utm_source=next-js-template&utm_medium=web&utm_campaign=${config.baseUrl}`}
+              href={`https://smbcloud.xyz/`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -42,7 +42,7 @@ export const Footer: FunctionComponent = () => {
       </div>
       <div className="text-xs text-muted-foreground lg:hidden">
         <Link
-          href={`https://wisp.blog/?utm_source=next-js-template&utm_medium=web&utm_campaign=${config.baseUrl}`}
+          href={`https://wisp.blog/`}
           target="_blank"
           rel="noopener noreferrer"
         >
