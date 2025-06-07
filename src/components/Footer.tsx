@@ -28,8 +28,17 @@ export const Footer: FunctionComponent = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              smbCloud.
+              smbCloud
             </Link>
+          {`. See `}
+          <Link
+            href="https://github.com/smbcloudXYZ/foodandtravel/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            the source code
+          </Link>
+          {`.`}
         </div>
         <div>
           <Link href="/rss">
@@ -47,6 +56,14 @@ export const Footer: FunctionComponent = () => {
           rel="noopener noreferrer"
         >
           Blog powered by wisp
+        </Link>
+        <span>{` · `}</span>
+        <Link
+          href="https://github.com/setoelkahfi/foodandtravel/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          See source code
         </Link>
       </div>
     </section>
